@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>connect 4 test</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+		<!--personal sheets/scripts-->
+		<link rel ="stylesheet" href="stylesheetC4.css">
+		
+	</head>
+	
+	<body>
+	
+	<div class="title display-4"> CONNECT<span class="four">4</span></div> 
+	<h2 id="goodLuck">Good luck, <span id="player">Red</span>!</h2>
+	<h2><p id="winner"></p></h2>
+	
+		<div class="container"> <!-- 7 cols x 6 rows ; automatically HIDE (just to not clog up the file) -->
+			<div class="row">
+				<div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div>
+			</div>
+			<div class="row">
+				<div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div>
+			</div>
+			<div class="row">
+				<div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div>
+			</div>
+			<div class="row">
+				<div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div>
+			</div>
+			<div class="row">
+				<div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div>
+			</div>
+			<div class="row">
+				<div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div>
+			</div>
+		
+			<!-- taken row -->
+			<div class="base row">
+				<div class="col taken"></div><div class="col taken"></div><div class="col taken"></div><div class="col taken"></div><div class="col taken"></div>
+				<div class="col taken"></div><div class="col taken"></div>
+			</div>
+		</div>
+	
+		<script src = "scriptC4.js"></script>
+	
+	<br>
+	
+	<div class="text-center">
+		<button id="button" class="btn" onclick = "replay()">Replay?</button>
+	</div>
+	
+	<br>
+	
+	</body>
+
+</html>
